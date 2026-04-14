@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: flask
-        image: ismail17/flask-app:v4
+        image: ismail17/flask-app:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 5000
