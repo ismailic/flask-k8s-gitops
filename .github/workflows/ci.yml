@@ -20,8 +20,10 @@ jobs:
 
     - name: Build Docker image
       run: |
-        docker build -t ismail17/flask-app:v5 .
+        docker build -t ismail17/flask-app:latest .
+        docker build -t ismail17/flask-app:${{ github.sha }} .
 
     - name: Push Docker image
       run: |
-        docker push ismail17/flask-app:v5
+        docker push ismail17/flask-app:latest
+        docker push ismail17/flask-app:${{ github.sha }}
