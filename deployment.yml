@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: flask-appv5
+  name: flask-appv6
 spec:
   replicas: 2
   selector:
